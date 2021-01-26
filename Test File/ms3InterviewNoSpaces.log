@@ -1,0 +1,6 @@
+Jan 26, 2021 6:29:37 AM csvParser.CsvParserUtils csvOrganizer
+INFO: # of Records Received: 6001
+Jan 26, 2021 6:29:37 AM csvParser.CsvParserUtils writeToCsv
+INFO: # of Records Failed: 1131
+Jan 26, 2021 6:29:37 AM csvParser.DatabaseUtils batchInsert
+INFO: # of Records Successful: 4870
