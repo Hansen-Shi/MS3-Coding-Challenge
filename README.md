@@ -44,7 +44,7 @@ I assumed that this was unintentional, so I deleted the excess columns and used 
 Upon starting the project I knew there had to be a convenient way to read, write, and parse through a .csv, 
 since it's such a widely used file format. I stumbled upon opencsv which happened to have a nice way to parse each row of data via 
 their csv to Java bean api. Instead of trying to validate a String array
-I could just check the fields of a Java bean for empty spaces. 
+I could just check the fields of a Java bean for empty spaces.
 
 The only issue with this approach is that
 up until implementing the csv to bean method I had been trying to keep everything dynamically generated in case of future developments
@@ -55,7 +55,9 @@ So afterwards I went back and changed some methods to better fit the small scale
 app would ever only need to do what was specified and nothing more. For example, I removed a createTable method and just hardcoded in the 
 SQL statement to create the table as I assumed that only the one table is needed. Some other assumptions I made include: I trusted the user
 to enter a valid path that isn't already a .db file, I assumed that the only thing that makes a row invalid is missing values and not 
-the data itself, I assumed that the user is okay with no GUI, and I assumed for logging that I didn't need to re-verify the amount of data post insertion.
+the data itself, I assumed that the user is okay with no GUI, I assumed for logging that I didn't need to re-verify the amount of data post insertion, 
+and I assumed that dealing with validation of data _before_ inserting into the database was better
+than validating and deleting data after inserting into the database.
 
 As I was chugging along I always tried to research best design practices and attempted to implement them where applicable, here's a few off the top of my head: utility classes are final, have
 a private constructor, and are stateless, insertion into the SQLite database was done in batches with prepared statements
