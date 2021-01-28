@@ -14,7 +14,7 @@ public final class LogStats {
     }
 
     /**
-     * This Method creates a logger than writes to a file with logName.
+     * This Method creates a logger then writes to a file with logName.
      * @param logName - the name of the file where logs are written to.
      * @return - the configured logger.
      */

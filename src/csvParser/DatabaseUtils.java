@@ -2,12 +2,9 @@ package csvParser;
 
 import org.apache.commons.dbutils.DbUtils;
 import java.io.File;
-import java.io.IOException;
 import java.sql.*;
 import java.util.List;
-import java.util.logging.FileHandler;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
 /**
  * This is a utility class with all the database related methods.

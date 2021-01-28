@@ -4,7 +4,7 @@ import com.opencsv.bean.CsvBindByName;
 import java.io.Serializable;
 
 /**
- * A Javabean class to use in conjunction with opencsv to process data.
+ * A Java bean class to use in conjunction with opencsv to process data.
  */
 public class Records implements Serializable {
     //Private fields matching the csv column headers
